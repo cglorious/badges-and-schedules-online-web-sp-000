@@ -19,16 +19,17 @@ def assign_rooms(assign_array)
 end
 
 def printer(attendees)
-# attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
   attendees.each do |greeting|
     hello = batch_badge_creator(greeting)
     puts hello.first
   end
-#  attendees.each do |room|
-#    key = assign_rooms(room)
-#    puts key.first
-#  end
+  attendees.each do |room|
+    key = assign_rooms(room)
+    puts key.first
+  end
 end
+
+# attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 #currently returns two arrays
 #what method returns values?
