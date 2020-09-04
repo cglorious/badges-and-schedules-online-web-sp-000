@@ -8,6 +8,8 @@ def batch_badge_creator(speakers)
   end
 end
 
+#output - array of badges
+
 def assign_rooms(assign_array)
   new_assign_array = []
   assign_array.each_with_index do |name, room|
@@ -18,9 +20,16 @@ def assign_rooms(assign_array)
   new_assign_array
 end
 
+#array of room assignments
+
 def printer(attendees)
-  attendees.map do |greeting| #map returns new array
-    greeting_array = batch_badge_creator(greeting)
+  badges_array = batch_badge_creator(attendees)
+  #make an array of badges that we iterate over
+  room_array = assign_rooms(attendees)
+  room_array.map do
+  
+  attendees.map do |greeting| #map returns new array, greeting is each element
+    greeting_array = batch_badge_creator(greeting) #input array
     puts greeting_array.first #output first element in array
   end
   attendees.map do |room|
