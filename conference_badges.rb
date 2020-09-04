@@ -27,6 +27,7 @@ def printer(attendees)
   badges_array.map do |greeting|
     puts badges_array.first
   end
+
   room_array = assign_rooms(attendees)
   room_array.map do |room|
     puts room_array.first
