@@ -26,7 +26,6 @@ def printer(attendees)
   attendees.each do |room|
     key = assign_rooms(room)
     puts key.first
-     #iterate over room assignments to puts assignments
   end
 end
 
