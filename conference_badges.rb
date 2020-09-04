@@ -20,12 +20,12 @@ end
 
 def printer(attendees)
   attendees.each do |greeting|
-    batch_badge_creator(greeting)
-    puts attendees[0]
+    hello = batch_badge_creator(greeting)
+    puts hello.first
   end
   attendees.each do |room|
-    assign_rooms(room)
-    puts
+    key = assign_rooms(room)
+    puts key.first
      #iterate over room assignments to puts assignments
   end
 end
