@@ -20,8 +20,8 @@ end
 
 def printer(attendees)
   attendees.map do |greeting|
-    hello = batch_badge_creator(greeting)
-    puts hello.first
+    greeting_array = batch_badge_creator(greeting)
+    puts greeting_array.first
   end
   attendees.map do |room|
     key = assign_rooms(room)
