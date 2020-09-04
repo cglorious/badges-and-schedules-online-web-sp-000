@@ -25,7 +25,7 @@ def printer(attendees)
   end
   attendees.map do |room|
     room_array = assign_rooms(room)
-    puts key.first
+    puts room_array.first
   end
 end
 
