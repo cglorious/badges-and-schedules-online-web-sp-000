@@ -18,15 +18,10 @@ def assign_rooms(assign_array)
   new_assign_array
 end
 
-def printer(attendees)
+def printer(attendees) ["a", "b"]
   attendees.each do |greeting|
     batch_badge_creator(greeting)
-    assign_rooms(greeting)
-
-  end
-  speaker_array.each do |name_and_room|
-    room = assign_rooms(name_and_room)
-    puts room[0]
+    assign_rooms(greeting) 
   end
 end
 
