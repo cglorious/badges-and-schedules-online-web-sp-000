@@ -30,7 +30,7 @@ def printer(attendees)
   #make an array of badges that we iterate over
   room_array = assign_rooms(attendees)
   room_array.map do |room|
-    puts room_array
+    puts room_array.first
   end
 end
   #attendees.map do |greeting| #map returns new array, greeting is each element
