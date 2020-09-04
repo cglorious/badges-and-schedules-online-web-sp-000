@@ -19,9 +19,9 @@ def assign_rooms(assign_array)
 end
 
 def printer(attendees)
-  attendees.map do |greeting|
+  attendees.map do |greeting| #map returns new array
     greeting_array = batch_badge_creator(greeting)
-    puts greeting_array.first
+    puts greeting_array.first #output first element in array
   end
   attendees.map do |room|
     room_array = assign_rooms(room)
