@@ -24,13 +24,13 @@ end
 
 def printer(attendees)
   badges_array = batch_badge_creator(attendees)
-  badges_array.each do |greeting|
-    puts badges_array
+  badges_array.each do |greeting| #"Hello, my name is #{name_array}."
+    puts greeting
   end
 
   room_array = assign_rooms(attendees)
   room_array.each do |room|
-    puts room_array.first
+    puts room
   end
 end
   #attendees.map do |greeting| #map returns new array, greeting is each element
