@@ -20,8 +20,8 @@ end
 
 def printer(attendees)
   attendees.each do |greeting|
-    puts batch_badge_creator(greeting) #undefined
-    puts assign_rooms(greeting)
+    batch_badge_creator(greeting) #undefined
+    assign_rooms(greeting)
   end
 end
 
