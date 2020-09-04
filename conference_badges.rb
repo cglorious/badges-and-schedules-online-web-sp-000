@@ -27,7 +27,7 @@ def printer(attendees)
   #make an array of badges that we iterate over
   room_array = assign_rooms(attendees)
   room_array.map do
-  
+
   attendees.map do |greeting| #map returns new array, greeting is each element
     greeting_array = batch_badge_creator(greeting) #input array
     puts greeting_array.first #output first element in array
