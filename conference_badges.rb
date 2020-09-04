@@ -21,7 +21,12 @@ end
 def printer(attendees)
   attendees.each do |greeting|
     batch_badge_creator(greeting)
-    assign_rooms(greeting)
+    puts 
+  end
+  attendees.each do |room|
+    assign_rooms(room)
+    puts
+     #iterate over room assignments to puts assignments
   end
 end
 
