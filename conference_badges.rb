@@ -33,14 +33,14 @@ def printer(attendees)
     puts room_array.first
   end
 
-  attendees.map do |greeting| #map returns new array, greeting is each element
-    greeting_array = batch_badge_creator(greeting) #input array
-    puts greeting_array.first #output first element in array
-  end
-  attendees.map do |room|
-    room_array = assign_rooms(room)
-    puts room_array.first
-  end
+  #attendees.map do |greeting| #map returns new array, greeting is each element
+  #  greeting_array = batch_badge_creator(greeting) #input array
+  #  puts greeting_array.first #output first element in array
+  #end
+  #attendees.map do |room|
+  #  room_array = assign_rooms(room)
+  #  puts room_array.first
+  #end
 end
 
 # attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
